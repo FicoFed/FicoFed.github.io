@@ -1,0 +1,497 @@
+ /* Seleccion de fuente */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Box Logo y datos */
+.header-container {
+    display: flex;
+    align-items: left;
+}
+  
+.column {
+    flex: 1;
+}
+  
+.logo {
+    text-align: left;
+    padding: 0px; 
+}
+  
+.icons-container {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: left;
+    height: 100%;
+}
+  
+.icon {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+/* Estilos para pantallas más pequeñas */
+@media (max-width: 768px) {
+    .header-container {
+      flex-direction: column;
+    }
+  
+    .column {
+      width: 100%;
+    }
+  
+    .icons-container {
+      align-items: flex-start;
+    }
+}    
+
+/* Barra de Navegacion */
+.navbar {
+  display: flex;
+  background-color: green;
+  padding: 10px;
+}
+  
+.navbar-nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-grow: 1;
+
+}
+  
+.nav-item {
+    position: relative;
+}
+  
+.nav-link {
+    color: white;
+    text-decoration: none;
+    padding: 0px;
+    margin: 10 10px; /* Agrega margen izquierdo y derecho de 10px */
+}
+
+  
+.nav-link.with-icon i {
+    margin-right: 0px;
+}
+  
+.search-box {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+}
+  
+.search-box input[type="text"] {
+    padding: 5px;
+}
+  
+.search-box .search-btn {
+    background-color: white;
+    border: none;
+    padding: 5px 10px;
+    margin-left: 5px;
+    color: green;
+}
+
+
+.navbar-nav .nav-link:hover,
+.navbar-nav .nav-item.dropdown:hover > .nav-link {
+  outline: 1px solid white;
+}
+
+.dropdown-menu {
+  display: none;
+}
+
+.nav-item.dropdown:hover > .dropdown-menu {
+  display: block;
+}
+
+.dropdown-menu a {
+  display: block;
+  padding: 10px;
+  background-color: black;
+  color: white;
+}
+
+.dropdown-menu a:hover {
+  background-color: white;
+  color: BLACK;
+}
+
+
+
+/* Boton de Suscribir */
+.button {
+    display: block;
+    width: fit-content;
+    margin: 0 auto;
+    background-color: green;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 20px;
+    text-decoration: none;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+  }
+  
+  .button a {
+    color: white;
+    text-decoration: none;
+  }
+  
+  .button a:hover {
+    color: black;
+  }
+    .spacing {
+    margin-top: 200px;
+    margin-bottom: 200px;
+  }
+
+
+  .image_area img {
+    width: 300px;
+    height: 300px;
+  }
+
+/* Estilos para el contenedor de busqueda */
+/* Estilos para el contenedor con imagen de fondo */
+.image-container {
+      position: relative;
+      width:100%;
+      padding: 20px;
+      height: 500px;
+      background-image: url('img/casa/casa1/1686174752wcrir-fev-9930jpg.jpeg');
+      background-size: cover;
+      background-position: center;
+      justify-content:center;
+     
+      margin-left: 5px; 
+      margin-right: 20px;
+}
+
+
+
+/* Estilos para tablas */
+.my-table {
+  width: 80%;
+  margin: 0 auto;
+  border-collapse: collapse;
+  background-color: #f2f2f2;
+}
+
+.my-table td {
+  padding: 10px;
+  text-align: center;
+  border: 1px solid #ddd;
+}
+
+.my-table tr:first-child {
+  background-color: #ccc;
+  font-weight: bold;
+}
+
+.my-table tr:nth-child(2n) {
+  background-color: #f9f9f9;
+}
+.my-button {
+  background-color: green;
+  color: white;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+  padding: 10px 20px;
+  border: none;
+  border-radius: 20px;
+  font-size: 16px;
+  margin: 10px;
+}
+
+/* Estilos contenedor del formulario */
+.form-container {
+  margin-left: 100px;
+  margin-right: px;
+  border-width: 4px; /* Arriba, Derecha, Abajo, Izquierda */
+  border-style: solid;
+  border-color: green;
+  padding: 10px;
+}
+
+.my-custom-carousel {
+
+  padding: 40px;
+}
+
+.my-custom-carousel-container {
+  overflow: hidden;
+}
+.my-custom-carousel-container img {
+  max-width: 100%;
+  height: auto;
+}
+
+
+
+.my-custom-button {
+  font-size: 1.5rem; /* Ajusta el tamaño de fuente */
+  padding: 20px 40px; /* Ajusta el espacio interno del botón */
+
+}
+
+.my-custom-title {
+  font-size: 4rem; /* Ajusta el tamaño de fuente */
+  font-weight: bold; /* Aplica negrita al texto */
+  color: green; /* Cambia el color del texto a verde */
+
+}
+
+.my-custom-title1 {
+  font-size: 2rem; /* Ajusta el tamaño de fuente */
+  font-weight: bold; /* Aplica negrita al texto */
+  color: green; /* Cambia el color del texto a verde */
+
+}
+
+.containerubicacion {
+  width: 70%;
+  max-width: 100%;
+  overflow: hidden;
+}
+
+.containerubicacion img {
+  width: 100%;
+  height: auto;
+  transition: transform 0.3s ease;
+}
+
+.container_busqueda {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.row_busqueda {
+  display: flex;
+  gap: 10px;
+}
+
+.column_busqueda {
+  flex: 1;
+  background-color: #ddd;
+  padding: 20px;
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  .container_busqueda {
+    flex-direction: column;
+  }
+}
+  
+  .row_busqueda {
+    flex-direction: column;
+  }
+  
+  .column_busqueda {
+    flex-basis: auto;
+  }
+
+/* Estilos para el contenedor de ubicacion  */
+.col-md-6 {
+  width: 50%;
+}
+
+.image-container1 {
+  width: 100%;
+  text-align: center;
+}
+
+.image-container1 img {
+  width: 100%;
+}
+
+.visually1 {
+  font-size: 50px; /* Modifica el tamaño del texto */
+  color:red; /* Modifica el color del texto */
+  margin-right: 80px; /* Añade un espacio de 10px después del texto */
+  font-weight: 900; /* Agrega más peso (bold) al texto */
+}
+.visually2 {
+  font-size: 50px; 
+  color:red;
+  margin-left: 80px; 
+  font-weight: 900; 
+}
+
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Estilos del footer */
+footer {
+  background-color: black;
+  color: white;
+  padding: 20px 0;
+}
+
+.footer-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.footer-column {
+  flex: 1;
+  min-width: 200px;
+  margin: 0 10px;
+}
+
+/* Estilos responsivos */
+@media (max-width: 768px) {
+  .footer-column {
+    flex: 1 1 100%;
+    margin: 10px 0;
+  }
+}
+
+/* Estilos del header */
+header {
+
+  color: white;
+  padding: 20px 0;
+}
+
+.header-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.header-column {
+  flex: 1;
+  min-width: 400px;
+  margin: 0 10px;
+}
+
+/* Estilos responsivos */
+@media (max-width: 768px) {
+  .header-column {
+    flex: 1 1 100%;
+    margin: 10px 0;
+  }
+}
+
+.link-with-underline {
+  position: relative;
+  display: inline-block;
+}
+
+.link-with-underline::after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 2px;
+  background-color: blue;
+}
+/* Estilos de los formularios */
+.my-form {
+  max-width: 600px; /* Establece el ancho máximo del formulario */
+  margin: 0 auto; /* Centra el formulario horizontalmente */
+}
+
+.form-group {
+  margin-bottom: 30px; /* Espacio entre los grupos de formulario */
+}
+.text-center {
+  text-align: center; /* Centra el texto horizontalmente */
+}
+.btn-primary1 {
+  background-color: green; /* Establece el color de fondo verde */
+  color: white; /* Establece el color del texto en blanco */
+
+}
+.form-control {
+  box-shadow: 2px 2px 4px rgba(129, 30, 30, 0); /* Agrega una sombra a los cuadros de texto */
+
+}
+.btn-green {
+  background-color: green; /* Establece el color de fondo verde */
+  color: black; /* Establece el color del texto en blanco */
+
+}
+.btn-green {
+  background-color: green;
+  color: white;
+}
+
+.btn-green:hover,
+.btn-green:focus {
+  background-color: darkgreen;
+  color: black;
+}
+
+.card-img-top {
+  position: relative;
+}
+  /* franja inclinada dentro fotos propiedades destacadas*/
+.square-button {
+  position: absolute;
+  width: 250px; /* Ajusta el tamaño del botón */
+  height: 45px;
+  top: 15%; /* Ajusta la posición vertical del botón */
+  left: 50%; /* Ajusta la posición horizontal del botón */
+  transform: translate(-50%, -50%) rotate(-5deg); /* Rota el botón -5 grados y lo centra */
+  background-color: green; /* Cambia el color de fondo del botón */
+  opacity: 50%; /* Cambia el color de fondo del botón */
+  border: none;
+  color: white;
+  text-align: center;
+}
+
+.button1 {
+  position: absolute;
+  width: 80px; 
+  height: 28px;
+  top: 90%; 
+  left: 20%; 
+  transform: translate(-50%, -50%) rotate(0deg);
+  background-color: green; 
+  opacity: 100%; 
+  border: none;
+  color: white;
+  text-align: center;
+}
+.button2 {
+  position: absolute;
+  width: 100px; 
+  height: 28px;
+  top: 30%;
+  left: 80%; 
+  transform: translate(-50%, -50%) rotate(0deg); 
+  background-color: green; 
+  opacity: 100%; 
+  border: none;
+  color: white;
+  text-align: center;
+}
+  
+.fa {
+  margin-right: 5px; /* Espacio entre el icono y el texto */
+  color: green; /* Cambia el color de los iconos a verde */
+}
+
+table {
+  border-collapse: separate;
+  border-spacing: 10px; /* Espacio entre las celdas */
+}
+
+td {
+  padding: px; /* Espacio interno dentro de las celdas */
+}  
