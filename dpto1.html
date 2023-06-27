@@ -20,6 +20,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="css/estilos.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 
 <body>
@@ -99,52 +100,50 @@
         </div>
       </div>
     </nav>
-
-    <!-- Cuerpo de la pagina -->
-
-    <div class="container">
-        <!-- Titulo e Informacion Importante de la Propiedad -->
-        <div class="row">
-            <div class="col-sm-12 pb-3">
-              <h1 class="text-center my-custom-title">Departamento Fabuloso</h1>
-              <h3 class="text-center">
-                <i class="fas fa-map-marker-alt"></i>
-                Blanco Encalda 2600, Nuñez, CABA, Argentina
-              </h3>
-              <div class="d-flex justify-content-center">
-                <button class="my-button my-custom-button">ALQUILER</button>
-                <button class="my-button my-custom-button">U$S 1.000</button>
-              </div><br><br>
-              <table class="my-table">
-                <tr>
-                  <td><img src="icons/dormitorio.png" alt="Icono 1" width="40"></td>
-                  <td><img src="icons/ambientes.png" alt="Icono 2" width="40"></td>
-                  <td><img src="icons/banera.png" alt="Icono 3" width="40"></td>
-                  <td><img src="icons/supm2.png" alt="Icono 4" width="40"></td>
-                  <td><img src="icons/supm2tot.png" alt="Icono 5" width="40"></td>
-      
-                <tr>
-                <tr>
-                  <td>Dormitorios</td>
-                  <td>Ambientes</td>
-                  <td>Baños</td>
-                  <td>M2 Cubiertos</td>
-                  <td>M2 Totales</td>
-                <tr>
-                <tr>
-                  <td>3</td>
-                  <td>5</td>
-                  <td>2</td>
-                  <td>89</td>
-                  <td>102</td>
-                <tr>
-              </table>
-            </div>
+  <!-- Seccion titulo e Info principal-->
+    <div class="container mt-5">
+      <div class="row">
+        <div class="col-lg-12 pb-3">
+          <h1 class="text-center my-custom-title">Departamento Fabuloso</h1>
+          <h3 class="text-center">
+            <i class="fas fa-map-marker-alt"></i>
+            Blanco Encalda 2600, Nuñez, CABA, Argentina
+          </h3>
+          <div class="d-flex justify-content-center">
+            <button class="my-button my-custom-button">ALQUILER</button>
+            <button class="my-button my-custom-button">U$S 1.000</button>
           </div><br><br>
-        <div class="row">
-            <!-- Carousel fotos Propiedad -->
-            <div class="col-md-6 pb-3 my-custom-column d-flex align-items-center">
-                <div id="carouselExample" class="carousel slide my-custom-carousel" style="width: 750px; height: 550px;"data-interval="500">
+          <table class="my-table">
+            <tr>
+              <td><img src="icons/dormitorio.png" alt="Icono 1" width="40"></td>
+              <td><img src="icons/ambientes.png" alt="Icono 2" width="40"></td>
+              <td><img src="icons/banera.png" alt="Icono 3" width="40"></td>
+              <td><img src="icons/supm2.png" alt="Icono 4" width="40"></td>
+              <td><img src="icons/supm2tot.png" alt="Icono 5" width="40"></td>
+            <tr>
+            <tr>
+              <td>Dormitorios</td>
+              <td>Ambientes</td>
+              <td>Baños</td>
+              <td>M2 Cubiertos</td>
+              <td>M2 Totales</td>
+            <tr>
+            <tr>
+              <td>3</td>
+              <td>5</td>
+              <td>2</td>
+              <td>89</td>
+              <td>102</td>
+            <tr>
+          </table>
+        </div>
+      </div><br>
+      <div class="row">
+        <!-- Carousel fotos Propiedad -->
+        <div class="col-lg-6">
+          <div class="card h-100"><br><br><br><br><br>
+            <div class="position-relative">
+                <div id="carouselExample" class="carousel slide my-custom-carousel" style="width: 580px; height: 600px;">
                     <div class="carousel-inner">
                         <div class="carousel-item active">
                           <img src="img/dpto/1/2.jpg" class="d-block w-100" alt="...">
@@ -189,12 +188,16 @@
                     </button>
                 </div>
             </div>
-            <!-- Formulario Interes Propiedad -->
-            <div class="col-sm-6 pb-3 my-custom-column d-flex align-items-center">
-                <div class="my-form-container">
+          </div>
+        </div>
+        <!-- Formulario Interes Propiedad -->
+        <div class="col-lg-6">
+          <div class="card h-100">
+            <div class="position-relative">
+                <div class="my-form-container"><br><br>
                     <div class="form-container">
                         <div class="logo">
-                            <img src="logo/logo2.png" alt="Logo de la empresa" width="250">
+                            <img src="logo/logo2.png" alt="Logo de la empresa" width="400">
                         </div>
                         <form id="contact-form" method="POST" action="enviar.php">
                             <div class="form-group">
@@ -222,13 +225,16 @@
                     </div>
                 </div>
             </div>
-        </div><br><br>
-        <div class="row">
-            <!-- Tabla Detalles Propiedad -->
-            <div class="col-md-6">
+          </div>
+        </div>
+      </div><br> 
+      <div class="row">
+        <!-- Tabla Detalles Propiedad -->
+        <div class="col-lg-6">
+          <div class="card h-100">
+            <div class="position-relative">
                 <div class="my-details">
                     <h5 class="text-center my-custom-title1">Descripcion de la Propiedad</h5><br>
-
                     <table class="my-table">
                       <tr style="height: 70px;">
                         <td>&#10003; Hermoso y Luminoso</td>
@@ -260,16 +266,22 @@
                       <tr>
                     </table>
                 </div>
-            </div><br><br>
-            <!-- Foto Ubicacion Propiedad -->
-            <div class="col-md-6">
+            </div>
+          </div>
+        </div>
+        <!-- Foto Ubicacion Propiedad -->
+        <div class="col-lg-6">
+          <div class="card h-100">
+            <div class="position-relative">
                 <h5 class="text-center my-custom-title1">Ubicación</h5><br><br><br>
                 <div class="image-container1">
                   <img src="img/dpto/1/locdpto1.jpg" alt="casa en venta" class="center-image">
                 </div>
-            </div>
+          </div>
         </div>
-    </div><br><br><br><br>
+      </div><br>       
+    </div><br><br>
+    </div>
     <!-- Footer -->
     <footer>
         <div class="container">
@@ -323,7 +335,7 @@
             </div>
           </div>
         </div>
-      </footer>
+    </footer>
 
     <!-- Bootstrap -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
